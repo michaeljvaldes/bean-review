@@ -1,0 +1,24 @@
+- model: auth.user
+  pk: 2
+  fields:
+    username: Coffee Person
+    email: coffeeperson@example.com
+- model: reviews.roaster
+  pk: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.coffee
+  pk: ac3a007b-f4e0-4358-b18e-a26367525a60
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+- model: reviews.review
+  pk: 12a5d95d-5693-47b0-96f3-70973c36c3d4
+  fields:
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    coffee: ac3a007b-f4e0-4358-b18e-a26367525a60
+    owner: 2
