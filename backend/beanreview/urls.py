@@ -21,6 +21,8 @@ from reviews import views
 
 router = DefaultRouter()
 router.register(r'users', viewset=views.UserViewSet, basename='user')
+router.register(r'roasters', viewset=views.RoasterViewSet, basename='roaster')
+router.register(r'reviews', viewset=views.ReviewViewSet, basename='review')
 
 urlpatterns = [
     path('', include(router.urls))
