@@ -15,13 +15,8 @@ class RoasterSerializer(serializers.ModelSerializer):
         fields = ['id', 'name', 'website']
 
 
-class RoasterSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Roaster
-        fields = ['id', 'name', 'website']
-
-
 class ReviewSerializer(serializers.ModelSerializer):
     class Meta:
         model = Review
-        fields = ['id', 'rating', 'notes', 'coffee', 'owner']
+        fields = ['id', 'name', 'year', 'origin',
+                  'rating', 'notes', 'roaster', 'owner']

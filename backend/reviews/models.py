@@ -10,24 +10,15 @@ class Roaster(models.Model):
     # owner
 
 
-class Coffee(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    name = models.CharField(max_length=100)
-    roaster = models.ForeignKey(
-        Roaster, related_name='coffees', on_delete=models.CASCADE)
-    year = models.IntegerField()
-    origin = models.TextField(max_length=20)
-    # process descriptors
-    # tasting note descriptors
-
-
 class Review(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    name = models.CharField(max_length=100)
+    year = models.IntegerField()
+    origin = models.TextField(max_length=20)
     rating = models.SmallIntegerField()
     notes = models.TextField()
     # tasting note descriptors
-    # owner
-    coffee = models.ForeignKey(
-        Coffee, related_name='reviews', on_delete=models.CASCADE)
+    roaster = models.ForeignKey(
+        Roaster, related_name='coffees', on_delete=models.CASCADE)
     owner = models.ForeignKey(
         'auth.user', related_name='reviews', on_delete=models.CASCADE)
