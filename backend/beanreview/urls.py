@@ -25,5 +25,6 @@ router.register(r'roasters', viewset=views.RoasterViewSet, basename='roaster')
 router.register(r'reviews', viewset=views.ReviewViewSet, basename='review')
 
 urlpatterns = [
-    path('', include(router.urls))
+    path('', include(router.urls)),
+    path('api-auth/', include('rest_framework.urls'))
 ]
