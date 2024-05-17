@@ -2,8 +2,8 @@ import { useState } from 'react'
 import { Box, Divider, Sheet, Stack } from '@mui/joy'
 import NavBar from './components/NavBar/NavBar'
 import SideBar from './components/SideBar/SideBar'
-import Feed from './components/Feed/Feed'
 import SideDrawer from './components/SideDrawer/SideDrawer'
+import { Outlet } from 'react-router-dom'
 
 function App() {
   const [drawerOpen, setDrawerOpen] = useState(false)
@@ -16,7 +16,7 @@ function App() {
       <Stack direction={'row'} justifyContent={'space-between'}>
         <Box flex={1} display={{ xs: 'none', sm: 'block' }}><SideBar></SideBar></Box>
         <Divider orientation='vertical' />
-        <Box flex={3}><Feed></Feed></Box>
+        <Box flex={3}><Outlet /></Box>
       </Stack>
     </Sheet >
   )
