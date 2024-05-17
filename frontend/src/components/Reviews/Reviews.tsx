@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Box, Card, Grid } from '@mui/joy';
+import { Grid } from '@mui/joy';
 import axios from 'axios';
 import { useQuery } from '@tanstack/react-query';
 import Review from '../../models/review';

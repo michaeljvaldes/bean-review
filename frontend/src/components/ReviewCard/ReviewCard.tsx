@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import Review from '../../models/review';
-import { Box, Button, ButtonGroup, Card, CardActions, CardContent, CardOverflow, Stack, Typography } from '@mui/joy';
+import { Box, Button, ButtonGroup, Card, CardActions, CardContent, Stack, Typography } from '@mui/joy';
 
 
 interface ReviewCardProps { review: Review }
