@@ -1,18 +1,10 @@
 import React, { FC } from 'react';
-import { Box, Card, Grid, Typography } from '@mui/joy';
+import { Card, Grid } from '@mui/joy';
 import axios from 'axios';
 import { useQuery } from '@tanstack/react-query';
+import Review from '../../models/review';
+import ReviewCard from '../ReviewCard/ReviewCard';
 
-type Review = {
-  id: string,
-  name: string,
-  year: number,
-  origin: string,
-  rating: number,
-  notes: string,
-  roaster: string,
-  owner: string
-}
 
 const getReviews = async () => {
   const response = await axios.get('/reviews.json')
@@ -36,10 +28,10 @@ const Reviews: FC<ReviewsProps> = () => {
         .map(reviewPair =>
         (<>
           <Grid xs={6}>
-            <Card>{reviewPair[0].name}</Card>
+            <ReviewCard review={reviewPair[0]}></ReviewCard>
           </Grid>
           <Grid xs={6}>
-            {reviewPair.length > 1 && (<Card>{reviewPair[1].name}</Card>)}
+            {reviewPair.length > 1 && (<ReviewCard review={reviewPair[1]}></ReviewCard>)}
           </Grid>
         </>
         ))}

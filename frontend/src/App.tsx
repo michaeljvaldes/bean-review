@@ -16,7 +16,7 @@ function App() {
       <Stack direction={'row'} justifyContent={'space-between'}>
         <Box flex={1} display={{ xs: 'none', sm: 'block' }}><SideBar></SideBar></Box>
         <Divider orientation='vertical' />
-        <Box flex={3}><Outlet /></Box>
+        <Box flex={3} margin={'10px'}><Outlet /></Box>
       </Stack>
     </Sheet >
   )
