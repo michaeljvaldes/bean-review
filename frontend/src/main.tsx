@@ -7,6 +7,8 @@ import Reviews from './components/Reviews/Reviews.tsx'
 import Roasters from './components/Roasters/Roasters.tsx'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import axios from 'axios'
+import './index.css'
+
 
 const router = createBrowserRouter([
   {

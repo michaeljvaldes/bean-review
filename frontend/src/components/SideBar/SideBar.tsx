@@ -12,19 +12,23 @@ const SideBar: FC<SideBarProps> = () => {
   const location = useLocation()
 
   return (
-    <Box data-testid="SideBar" margin={'10px'}>
+    <Box data-testid="SideBar" margin={'10px'} sx={{ height: '100vh' }}>
       <ButtonGroup orientation='vertical' spacing={1} variant='plain'>
         <Button
           variant={location.pathname === '/reviews' || location.pathname === '/' ? 'soft' : 'plain'}
           startDecorator={<ReviewsIcon />}
-          onClick={() => navigate('/reviews')}>
-          <Typography level='title-md'>Reviews</Typography>
+          onClick={() => navigate('/reviews')}
+          sx={{ justifyContent: 'flex-start' }}
+        >
+          <Typography level='body-md'>Reviews</Typography>
         </Button>
         <Button
           variant={location.pathname === '/roasters' ? 'soft' : 'plain'}
           startDecorator={<BusinessIcon />}
-          onClick={() => navigate('/roasters')}>
-          <Typography level='title-md'>Roasters</Typography>
+          onClick={() => navigate('/roasters')}
+          sx={{ justifyContent: 'flex-start' }}
+        >
+          <Typography level='body-md'>Roasters</Typography>
         </Button>
       </ButtonGroup>
     </Box>
