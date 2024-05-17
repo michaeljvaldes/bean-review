@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Box, Typography } from '@mui/joy';
+import { Box, Card, Grid, Typography } from '@mui/joy';
 import axios from 'axios';
 import { useQuery } from '@tanstack/react-query';
 
@@ -29,11 +29,21 @@ interface ReviewsProps { }
 
 const Reviews: FC<ReviewsProps> = () => {
   const query = useReviewsQuery()
+
   return (
-    <Box data-testid="Reviews">
-      {query.data?.map(review =>
-        <Typography>{review.name}</Typography>)}
-    </Box>
+    <Grid data-testid="Reviews" container spacing={2}>
+      {query.data?.flatMap((_, i, a) => i % 2 ? [] : [a.slice(i, i + 2)])
+        .map(reviewPair =>
+        (<>
+          <Grid xs={6}>
+            <Card>{reviewPair[0].name}</Card>
+          </Grid>
+          <Grid xs={6}>
+            {reviewPair.length > 1 && (<Card>{reviewPair[1].name}</Card>)}
+          </Grid>
+        </>
+        ))}
+    </Grid>
   )
 };
 
