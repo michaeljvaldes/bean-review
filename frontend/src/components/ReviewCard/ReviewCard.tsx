@@ -15,7 +15,7 @@ const ReviewCard: FC<ReviewCardProps> = ({ review }) => {
   }
 
   return (
-    <Card data-testid="ReviewCard" variant='soft'>
+    <Card data-testid="ReviewCard" variant='soft' sx={{ height: '100%' }}>
       <Stack direction={'column'}></Stack>
       <Stack direction={'row'} alignItems={'center'} justifyContent={'space-between'}>
         <Typography level='h3'>{review.name}</Typography>

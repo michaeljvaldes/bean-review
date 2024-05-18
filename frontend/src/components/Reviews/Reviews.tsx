@@ -24,11 +24,12 @@ const Reviews: FC<ReviewsProps> = () => {
   return (
     <Grid data-testid="Reviews" container spacing={2} columns={2}>
       {query.data?.map(review => (
-        <Grid key={review.id} xs={1}>
+        <Grid key={review.id} xs={1} display={'flex'} flexDirection={'column'}>
           <ReviewCard review={review}></ReviewCard>
         </Grid>
-      ))}
-    </Grid>
+      ))
+      }
+    </Grid >
   )
 };
 
