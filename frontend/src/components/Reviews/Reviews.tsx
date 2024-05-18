@@ -16,7 +16,6 @@ const useReviewsQuery = () => {
   return useQuery({ queryKey: ['reviews'], queryFn: getReviews })
 }
 
-
 interface ReviewsProps { }
 
 const Reviews: FC<ReviewsProps> = () => {
