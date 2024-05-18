@@ -12,7 +12,7 @@ const NavBar: FC<NavBarProps> = ({ openDrawer }) => (
         <Menu></Menu>
       </IconButton>
     </Box>
-    <Typography level='h2'>Bean Review</Typography>
+    <Typography level='h3'>Bean Review</Typography>
   </Stack>
 );
 

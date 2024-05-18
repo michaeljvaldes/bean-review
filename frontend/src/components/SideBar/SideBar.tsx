@@ -1,7 +1,7 @@
 import { Box, Button, ButtonGroup, Typography } from '@mui/joy';
 import React, { FC } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import ReviewsIcon from '@mui/icons-material/Reviews';
+import DescriptionIcon from '@mui/icons-material/Description';
 import BusinessIcon from '@mui/icons-material/Business';
 
 
@@ -12,11 +12,11 @@ const SideBar: FC<SideBarProps> = () => {
   const location = useLocation()
 
   return (
-    <Box data-testid="SideBar" margin={'10px'} sx={{ height: '100vh' }}>
+    <Box data-testid="SideBar" margin={'5px'} sx={{ height: '100vh' }}>
       <ButtonGroup orientation='vertical' spacing={1} variant='plain'>
         <Button
           variant={location.pathname === '/reviews' || location.pathname === '/' ? 'soft' : 'plain'}
-          startDecorator={<ReviewsIcon />}
+          startDecorator={<DescriptionIcon />}
           onClick={() => navigate('/reviews')}
           sx={{ justifyContent: 'flex-start' }}
         >
