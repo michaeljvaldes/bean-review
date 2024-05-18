@@ -17,6 +17,7 @@ class RoasterSerializer(serializers.ModelSerializer):
 
 class ReviewSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source='owner.username')
+    roaster = RoasterSerializer(many=False, read_only=True)
 
     class Meta:
         model = Review

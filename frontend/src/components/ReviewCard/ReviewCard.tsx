@@ -3,6 +3,9 @@ import Review from '../../models/review';
 import { Button, ButtonGroup, Card, CardActions, CardContent, Stack, Typography } from '@mui/joy';
 import { useNavigate } from 'react-router-dom';
 import { shortenUUID } from '../../services/uuid';
+import BusinessIcon from '@mui/icons-material/Business';
+import PublicIcon from '@mui/icons-material/Public';
+import PersonIcon from '@mui/icons-material/Person';
 
 
 interface ReviewCardProps { review: Review }
@@ -22,10 +25,22 @@ const ReviewCard: FC<ReviewCardProps> = ({ review }) => {
         <Typography level='h4'>{review.rating} {review.rating === 1 ? 'Star' : 'Stars'} </Typography>
       </Stack>
       <CardContent>
-        <Typography level='title-sm'>{review.roaster}</Typography>
-        <Typography level='body-md'>{review.origin}</Typography>
+        <Typography
+          startDecorator={<BusinessIcon />}
+          level='body-md'>
+          {review.roaster.name}
+        </Typography>
+        <Typography
+          startDecorator={<PublicIcon />}
+          level='body-md'>
+          {review.origin}
+        </Typography>
         <Stack direction={'row'} alignItems={'center'} justifyContent={'space-between'}>
-          <Typography level='body-md'>{review.owner}</Typography>
+          <Typography
+            startDecorator={<PersonIcon />}
+            level='body-md'>
+            {review.owner}
+          </Typography>
           <Typography level='body-sm'>{review.year}</Typography>
         </Stack>
       </CardContent>

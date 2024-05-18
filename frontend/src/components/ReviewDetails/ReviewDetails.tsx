@@ -32,7 +32,7 @@ const ReviewDetails: FC<ReviewDetailsProps> = () => {
           <Typography level='title-lg'>{query.data?.name}</Typography>
 
           <Typography variant='plain' level='title-sm'>Roaster</Typography>
-          <Typography variant='soft'>{query.data?.roaster}</Typography>
+          <Typography variant='soft'>{query.data?.roaster.name}</Typography>
 
           <Typography variant='plain' level='title-sm'>Origin</Typography>
           <Typography variant='soft'>{query.data?.origin}</Typography>

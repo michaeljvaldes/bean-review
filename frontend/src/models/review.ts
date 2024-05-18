@@ -1,3 +1,5 @@
+import Roaster from "./roaster";
+
 type Review = {
     id: string,
     name: string,
@@ -5,7 +7,7 @@ type Review = {
     origin: string,
     rating: number,
     notes: string,
-    roaster: string,
+    roaster: Roaster,
     owner: string
 }
 
