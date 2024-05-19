@@ -1,0 +1,2007 @@
+# Two users
+- model: auth.user
+  pk: 2
+  fields:
+    username: CoffeePerson
+    email: coffeeperson@example.com
+    password: pbkdf2_sha256$600000$l83YGbJlXugA3X7PWCUyZk$esb2Q2k9g2GLsNLIX4Hr9wb7yCYzIKa9+nWr6a8ytYs=
+- model: auth.user
+  pk: 3
+  fields:
+    username: TeaPerson
+    email: teaperson@example.com
+    password: pbkdf2_sha256$600000$l83YGbJlXugA3X7PWCUyZk$esb2Q2k9g2GLsNLIX4Hr9wb7yCYzIKa9+nWr6a8ytYs=
+
+# Two roasters
+- model: reviews.roaster
+  pk: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  pk: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+
+# Two reviews, 100 copies each
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
+- model: reviews.review
+  fields:
+    name: Colombia Natural
+    roaster: 1c05039f-4384-4b20-b875-41c04bd5e0d2
+    year: 2024
+    origin: Colombia
+    rating: 5
+    notes: Berry acidity and a fruit-forward cup.
+    owner: 2
+- model: reviews.review
+  fields:
+    name: Kenya Washed
+    roaster: 30ef38e1-11a7-4db2-9636-2dbea945edc3
+    year: 2024
+    origin: Kenya
+    rating: 1
+    notes: I only like tea.
+    owner: 3
