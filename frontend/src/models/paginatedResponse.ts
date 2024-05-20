@@ -1,8 +1,8 @@
-type PaginatedResonse<T> = {
+type PaginatedResponse<T> = {
     count: number,
     next: string,
     previous: string,
     results: T[]
 }
 
-export default PaginatedResonse;
+export default PaginatedResponse;

@@ -1,4 +1,6 @@
-# Two users
+# Two users; two roasters, ~100 copies each; two reviews, ~100 copies each
+
+############### Two users ###############
 - model: auth.user
   pk: 2
   fields:
@@ -12,7 +14,7 @@
     email: teaperson@example.com
     password: pbkdf2_sha256$600000$l83YGbJlXugA3X7PWCUyZk$esb2Q2k9g2GLsNLIX4Hr9wb7yCYzIKa9+nWr6a8ytYs=
 
-# Two roasters
+############### Two roasters, ~100 copies each ###############
 - model: reviews.roaster
   pk: 1c05039f-4384-4b20-b875-41c04bd5e0d2
   fields:
@@ -23,8 +25,888 @@
   fields:
     name: Just Another Coffee Company
     website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
+- model: reviews.roaster
+  fields:
+    name: Coffee Roasters Inc.
+    website: www.coffeeroastersinc123.com
+- model: reviews.roaster
+  fields:
+    name: Just Another Coffee Company
+    website: www.justanothercoffeecompany123.com
 
-# Two reviews, 100 copies each
+############### Two reviews, ~100 copies each ###############
 - model: reviews.review
   fields:
     name: Colombia Natural

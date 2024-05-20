@@ -4,13 +4,13 @@ import axios from 'axios';
 import { useInfiniteQuery } from '@tanstack/react-query';
 import Review from '../../models/review';
 import ReviewCard from '../ReviewCard/ReviewCard';
-import PaginatedResonse from '../../models/paginatedResponse';
+import PaginatedResponse from '../../models/paginatedResponse';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
 
 const getReviews = async ({ pageParam }: { pageParam: string }) => {
   const response = await axios.get(`/reviews.json/?page=${pageParam}`)
-  const data: PaginatedResonse<Review> = response.data
+  const data: PaginatedResponse<Review> = response.data
   return data
 }
 
@@ -18,8 +18,8 @@ const useReviewsQuery = () => {
   return useInfiniteQuery({
     queryKey: ['reviews'],
     queryFn: getReviews,
-    initialPageParam: '0',
-    getNextPageParam: (lastPage) => lastPage.next
+    initialPageParam: '1',
+    getNextPageParam: (lastPage) => lastPage.next,
   })
 }
 

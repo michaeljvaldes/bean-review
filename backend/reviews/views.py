@@ -1,5 +1,5 @@
 from django.contrib.auth.models import User
-from rest_framework import viewsets
+from rest_framework import filters, viewsets
 from reviews.models import Review, Roaster
 from reviews.serializers import (ReviewSerializer, RoasterSerializer,
                                  UserSerializer)
@@ -13,6 +13,8 @@ class UserViewSet(viewsets.ReadOnlyModelViewSet):
 class RoasterViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Roaster.objects.all()
     serializer_class = RoasterSerializer
+    filter_backends = [filters.SearchFilter]
+    search_fields = ['name']
 
 
 class ReviewViewSet(viewsets.ModelViewSet):
