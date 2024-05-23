@@ -1,11 +1,13 @@
-import React, { FC } from 'react';
-import { Grid } from '@mui/joy';
+import React, { FC, useState } from 'react';
+import { Button, Grid, Modal, ModalDialog, Stack, Typography } from '@mui/joy';
 import axios from 'axios';
 import { useInfiniteQuery } from '@tanstack/react-query';
 import Review from '../../models/review';
 import ReviewCard from '../ReviewCard/ReviewCard';
 import PaginatedResponse from '../../models/paginatedResponse';
 import InfiniteScroll from 'react-infinite-scroll-component';
+import { Add } from '@mui/icons-material';
+import CreateReviewForm from '../CreateReviewForm/CreateReviewForm';
 
 
 const getReviews = async ({ pageParam }: { pageParam: string }) => {
@@ -27,24 +29,44 @@ interface ReviewsProps { }
 
 const Reviews: FC<ReviewsProps> = () => {
   const { data, fetchNextPage, hasNextPage } = useReviewsQuery()
+  const [open, setOpen] = useState(false)
+
 
   return (
-    <InfiniteScroll
-      dataLength={data?.pages.length ?? 0}
-      next={fetchNextPage}
-      hasMore={hasNextPage}
-      loader={<h4>Loading...</h4>}
-    >
-      <Grid data-testid="Reviews" container spacing={2} columns={2}>
-        {data?.pages.flatMap(page => page.results)
-          .map(review => (
-            <Grid key={review.id} xs={1} display={'flex'} flexDirection={'column'}>
-              <ReviewCard review={review}></ReviewCard>
-            </Grid>
-          ))
-        }
-      </Grid >
-    </InfiniteScroll>
+    <Stack data-testid="Reviews" direction={'column'} spacing={2}>
+      <Stack direction={'row'} justifyContent={'space-between'}>
+        <Typography level='title-md'>Latest reviews</Typography>
+        <Button startDecorator={<Add />} onClick={() => setOpen(true)}>
+          Add review
+        </Button>
+      </Stack>
+      <InfiniteScroll
+        dataLength={data?.pages.length ?? 0}
+        next={fetchNextPage}
+        hasMore={hasNextPage}
+        loader={<h4>Loading...</h4>}
+      >
+        <Grid container spacing={2} columns={2}>
+          {data?.pages.flatMap(page => page.results)
+            .map(review => (
+              <Grid
+                key={review.id}
+                xs={1}
+                display={'flex'}
+                flexDirection={'column'}
+              >
+                <ReviewCard review={review}></ReviewCard>
+              </Grid>
+            ))
+          }
+        </Grid >
+      </InfiniteScroll>
+      <Modal open={open} onClose={() => setOpen(false)}>
+        <ModalDialog>
+          <CreateReviewForm />
+        </ModalDialog>
+      </Modal>
+    </Stack>
   )
 };
 
