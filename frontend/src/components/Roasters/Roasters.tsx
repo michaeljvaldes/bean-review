@@ -1,4 +1,4 @@
-import { Box, Card, Divider, Input, Stack, Typography } from '@mui/joy';
+import { Box, Card, Input, Stack, Typography } from '@mui/joy';
 import axios from 'axios';
 import React, { FC, useState } from 'react';
 import Roaster from '../../models/roaster';
@@ -6,6 +6,8 @@ import { useInfiniteQuery } from '@tanstack/react-query';
 import { Search } from '@mui/icons-material';
 import PaginatedResponse from '../../models/paginatedResponse';
 import InfiniteScroll from 'react-infinite-scroll-component';
+import { useNavigate } from 'react-router-dom';
+import { shortenUUID } from '../../services/uuid';
 
 
 const getRoasters = async ({ queryKey, pageParam }: { queryKey: string[], pageParam: string }) => {
@@ -31,17 +33,22 @@ const Roasters: FC<RoastersProps> = () => {
   const [nameFilter, setNameFilter] = useState('')
   const { data, fetchNextPage, hasNextPage } = useRoastersQuery(nameFilter)
 
+  const navigate = useNavigate()
+  const navigateToRoasterDetail = (roasterId: string) => {
+    const shortRoasterId = shortenUUID(roasterId)
+    navigate(`${shortRoasterId}`)
+  }
+
   return (
     <Box data-testid="Roasters">
       <Stack direction={'column'} spacing={2}>
-
         <Stack direction={'row'} justifyContent={'space-between'}>
           <Typography level='h2'>Browse Roasters</Typography>
           <Input
             onChange={(event) => setNameFilter(event.target.value)}
             startDecorator={<Search />}
-          ></Input>
-
+          >
+          </Input>
         </Stack>
         <InfiniteScroll
           dataLength={data?.pages.length ?? 0}
@@ -49,11 +56,13 @@ const Roasters: FC<RoastersProps> = () => {
           hasMore={hasNextPage}
           loader={<h4>Loading...</h4>}
         >
-
           <Stack direction={'column'} spacing={1}>
             {data?.pages.flatMap(page => page.results)
               .map(roaster => (
-                <Card variant='outlined' orientation='horizontal'
+                <Card
+                  variant='outlined'
+                  orientation='horizontal'
+                  onClick={() => navigateToRoasterDetail(roaster.id)}
                   sx={{
                     bgcolor: 'neutral.softBg',
                     '&:hover': {

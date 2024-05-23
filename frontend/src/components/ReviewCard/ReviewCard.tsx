@@ -13,12 +13,12 @@ interface ReviewCardProps { review: Review }
 const ReviewCard: FC<ReviewCardProps> = ({ review }) => {
   const navigate = useNavigate()
   const navigateToReviewDetail = () => {
-    const shortReviewId = shortenUUID(review.id)
-    navigate(`${shortReviewId}`)
+    const shortId = shortenUUID(review.id)
+    navigate(`${shortId}`)
   }
 
   return (
-    <Card data-testid="ReviewCard" variant='soft' sx={{ height: '100%' }}>
+    <Card data-testid="ReviewCard" variant='soft'>
       <Stack direction={'column'}></Stack>
       <Stack direction={'row'} alignItems={'center'} justifyContent={'space-between'}>
         <Typography level='h3'>{review.name}</Typography>

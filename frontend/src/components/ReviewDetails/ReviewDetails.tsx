@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, Divider, Stack, Typography } from '@mui/joy';
+import { Card, CardContent, Stack, Typography } from '@mui/joy';
 import React, { FC } from 'react';
 import Review from '../../models/review';
 import axios from 'axios';
@@ -14,28 +14,31 @@ const getReview = async (reviewId: string) => {
 }
 
 const useReviewQuery = (reviewId: string) => {
-  return useQuery({ queryKey: ['reviews', reviewId], queryFn: () => getReview(reviewId) })
+  return useQuery({
+    queryKey: ['reviews', reviewId],
+    queryFn: () => getReview(reviewId)
+  })
 }
 
-interface ReviewDetailsProps { reviewId: string }
+interface ReviewDetailsProps { }
 
 const ReviewDetails: FC<ReviewDetailsProps> = () => {
-  const { shortReviewId } = useParams()
-  const reviewId = expandUUID(shortReviewId ?? '')
-  const query = useReviewQuery(reviewId)
+  const { shortId } = useParams()
+  const reviewId = expandUUID(shortId ?? '')
+  const { data } = useReviewQuery(reviewId)
 
   return (
     <Stack data-testid="ReviewDetails" spacing={1}>
       <Card>
         <Typography level='title-sm'>Coffee</Typography>
         <CardContent>
-          <Typography level='title-lg'>{query.data?.name}</Typography>
+          <Typography level='title-lg'>{data?.name}</Typography>
 
           <Typography variant='plain' level='title-sm'>Roaster</Typography>
-          <Typography variant='soft'>{query.data?.roaster.name}</Typography>
+          <Typography variant='soft'>{data?.roaster.name}</Typography>
 
           <Typography variant='plain' level='title-sm'>Origin</Typography>
-          <Typography variant='soft'>{query.data?.origin}</Typography>
+          <Typography variant='soft'>{data?.origin}</Typography>
 
           <Typography variant='plain' level='title-sm'>Process</Typography>
           <Typography variant='soft'>Natural, Anaerobic</Typography>
@@ -45,13 +48,13 @@ const ReviewDetails: FC<ReviewDetailsProps> = () => {
       <Card>
         <Typography level='title-sm'>Review</Typography>
         <CardContent>
-          <Typography level='title-lg'>{query.data?.rating} {query.data?.rating === 1 ? 'Star' : 'Stars'}</Typography>
+          <Typography level='title-lg'>{data?.rating} {data?.rating === 1 ? 'Star' : 'Stars'}</Typography>
 
           <Typography variant='plain' level='title-sm'>Notes</Typography>
-          <Typography variant='soft'>{query.data?.notes}</Typography>
+          <Typography variant='soft'>{data?.notes}</Typography>
 
           <Typography variant='plain' level='title-sm'>Reviewer</Typography>
-          <Typography variant='soft'>{query.data?.owner}</Typography>
+          <Typography variant='soft'>{data?.owner}</Typography>
         </CardContent>
       </Card>
     </Stack>

@@ -9,6 +9,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import axios from 'axios'
 import './index.css'
 import ReviewDetails from './components/ReviewDetails/ReviewDetails.tsx'
+import RoasterDetails from './components/RoasterDetails/RoasterDetails.tsx'
 
 
 const router = createBrowserRouter([
@@ -21,12 +22,16 @@ const router = createBrowserRouter([
         element: <Reviews />
       },
       {
+        path: 'reviews/:shortId',
+        element: <ReviewDetails />
+      },
+      {
         path: 'roasters',
         element: <Roasters />
       },
       {
-        path: 'reviews/:shortReviewId',
-        element: <ReviewDetails />
+        path: 'roasters/:shortId',
+        element: <RoasterDetails />
       }
     ]
   }
