@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'knox',
     'corsheaders',
     'reviews',
 ]
@@ -105,7 +106,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'reviews.pagination.CustomPagination',
-    'PAGE_SIZE': 50
+    'PAGE_SIZE': 50,
+    'DEFAULT_AUTHENTICATION_CLASSES': ('knox.auth.TokenAuthentication',),
 }
 
 # Internationalization
@@ -134,3 +136,11 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
 ]
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+]
+
+REST_KNOX = {
+    'USER_SERIALIZER': 'reviews.serializers.UserSerializer',
+}

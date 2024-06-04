@@ -1,31 +1,11 @@
-import { Box, Card, Input, Stack, Typography } from '@mui/joy';
-import axios from 'axios';
-import React, { FC, useState } from 'react';
-import Roaster from '../../models/roaster';
-import { useInfiniteQuery } from '@tanstack/react-query';
 import { Search } from '@mui/icons-material';
-import PaginatedResponse from '../../models/paginatedResponse';
+import { Box, Card, Input, Stack, Typography } from '@mui/joy';
+import { FC, useState } from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { useNavigate } from 'react-router-dom';
+import { useRoastersQuery } from '../../services/roasters';
 import { shortenUUID } from '../../services/uuid';
 
-
-const getRoasters = async ({ queryKey, pageParam }: { queryKey: string[], pageParam: string }) => {
-  const nameFilter = queryKey[1] ?? ''
-  const searchParam = nameFilter.length > 0 ? `&search=${nameFilter}` : ''
-  const response = await axios.get(`/roasters.json/?page=${pageParam}${searchParam}`)
-  const data: PaginatedResponse<Roaster> = response.data
-  return data
-}
-
-const useRoastersQuery = (nameFilter: string) => {
-  return useInfiniteQuery({
-    queryKey: ['roasters', nameFilter],
-    queryFn: getRoasters,
-    initialPageParam: '1',
-    getNextPageParam: (lastPage) => lastPage.next
-  })
-}
 
 interface RoastersProps { }
 
@@ -60,6 +40,7 @@ const Roasters: FC<RoastersProps> = () => {
             {data?.pages.flatMap(page => page.results)
               .map(roaster => (
                 <Card
+                  key={roaster.id}
                   variant='outlined'
                   orientation='horizontal'
                   onClick={() => navigateToRoasterDetail(roaster.id)}
