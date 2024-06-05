@@ -4,9 +4,9 @@ from knox.views import LoginView as KnoxLoginView
 from rest_framework import filters, mixins, permissions, viewsets
 from rest_framework.authtoken.serializers import AuthTokenSerializer
 from reviews.models import Review, Roaster
-from reviews.serializers import (ReviewSerializer, RoasterSerializer,
-                                 UserSerializer)
-from reviews.permissions import IsSelf
+from reviews.permissions import IsOwnerOrReadOnly, IsSelf
+from reviews.serializers import (ReviewReadSerializer, ReviewWriteSerializer,
+                                 RoasterSerializer, UserSerializer)
 
 
 class UserViewSet(viewsets.ReadOnlyModelViewSet):
@@ -29,6 +29,13 @@ class RoasterViewSet(viewsets.ReadOnlyModelViewSet):
 
 class ReviewViewSet(viewsets.ModelViewSet):
     queryset = Review.objects.all()
+    serializer_class = ReviewReadSerializer
+    permission_classes = [IsOwnerOrReadOnly]
+
+    def get_serializer_class(self):
+        if self.action == 'retrieve' or self.action == 'list':
+            return ReviewReadSerializer
+        return ReviewWriteSerializer
 
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)

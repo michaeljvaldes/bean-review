@@ -15,7 +15,7 @@ class RoasterSerializer(serializers.ModelSerializer):
         fields = ['id', 'name', 'website']
 
 
-class ReviewSerializer(serializers.ModelSerializer):
+class ReviewReadSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source='owner.username')
     roaster = RoasterSerializer(many=False, read_only=True)
 
@@ -23,3 +23,15 @@ class ReviewSerializer(serializers.ModelSerializer):
         model = Review
         fields = ['id', 'name', 'year', 'origin',
                   'rating', 'notes', 'roaster', 'owner']
+
+
+class ReviewWriteSerializer(serializers.ModelSerializer):
+    owner = serializers.ReadOnlyField(source='owner.username')
+    roaster = serializers.PrimaryKeyRelatedField(
+        many=False, queryset=Roaster.objects.all())
+
+    class Meta:
+        model = Review
+        fields = ['id', 'name', 'year', 'origin',
+                  'rating', 'notes', 'roaster', 'owner']
+        read_only_fields = ['id']

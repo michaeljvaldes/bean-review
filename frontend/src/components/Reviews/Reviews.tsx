@@ -1,5 +1,5 @@
 import React, { FC, useState } from 'react';
-import { Button, Grid, Modal, ModalDialog, Stack, Typography } from '@mui/joy';
+import { Button, Grid, Modal, ModalClose, ModalDialog, Stack, Typography } from '@mui/joy';
 import axios from 'axios';
 import { useInfiniteQuery } from '@tanstack/react-query';
 import Review from '../../models/review';
@@ -63,7 +63,8 @@ const Reviews: FC<ReviewsProps> = () => {
       </InfiniteScroll>
       <Modal open={open} onClose={() => setOpen(false)}>
         <ModalDialog>
-          <CreateReviewForm />
+          <ModalClose />
+          <CreateReviewForm onCreate={() => setOpen(false)} />
         </ModalDialog>
       </Modal>
     </Stack>
